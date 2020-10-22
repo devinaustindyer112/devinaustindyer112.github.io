@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Devin Dyer</title>
@@ -9,8 +8,6 @@
 	<link rel="stylesheet" href="./css/style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com.css2>family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-</head>
-
 </head>
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient-t p-2">
@@ -28,21 +25,26 @@
   	</div>
 </nav>
 
-<div class="row row-image display-none" id="row1" style="background-image: url('./images/image1.jpg');">
-    <h1 class="text-light" id="row1header" style="font-family: 'Lobster'; padding-top: 75px;">Header 1</h1>
+<div class="display-none">
+<div class="parallax" style="background-image: url('./images/image4.jpg');">
+</div>
+<div class="shadow row bg-dark text-light text-center" style="height: 20%; padding: 50px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="parallax" style="background-image: url('./images/image3.jpg');">
+</div>
+<div class="shadow row bg-dark text-light text-center" style="height: 20%; padding: 50px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="parallax" style="background-image: url('./images/image2.jpg');">
+</div>
+<div class="shadow row bg-dark text-light text-center" style="height: 20%; padding: 50px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="parallax" style="background-image: url('./images/image1.jpg');">
+</div>
 </div>
 
-<div class="row row-image display-none" id="row2" style="background-image: url('./images/image2.jpg');">
-    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 2</h1>
-</div>
-
-<div class="row row-image display-none" id="row3" style="background-image: url('./images/image3.jpg');">
-    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 3</h1>
-</div>
-
-<div class="row row-image display-none" id="row4" style="background-image: url('./images/image4.jpg');">
-    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 4</h1>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -50,34 +52,8 @@
 <script src="./js/app.js"></script>
 
 <script type="text/javascript">
-    document.querySelector('#row1').addEventListener('click', function() {
-        document.querySelector('#row1').classList.toggle('expand');
-    });
-    document.querySelector('#row2').addEventListener('click', function() {
-        document.querySelector('#row2').classList.toggle('expand');
-    });
-    document.querySelector('#row3').addEventListener('click', function() {
-        document.querySelector('#row3').classList.toggle('expand');
-    });
-	document.querySelector('#row4').addEventListener('click', function() {
-        document.querySelector('#row4').classList.toggle('expand');
-    });
-
-
     $(document).ready(function() {
-        $('#header').css('top', $('.navbar').height() + parseInt($('.navbar').css('padding-top')) * 2);
-        $('#header').show('slide', {},  1500, function() {
-            $('.display-none').fadeIn(1000);
-        });	
-
-        $('#row1').show('slide', {}, 2000);
-        $('#row2').show('slide', {direction: "right"},  2000);
-        $('#row3').show('slide', {}, 2000);
-		$('#row4').show('slide', {direction: "right"}, 2000);
-
-        $('.navbar-toggler').click(function() {
-			$('#row1header').fadeToggle();
-		});
+        $('.display-none').fadeIn(1000);
     });
 </script>
 

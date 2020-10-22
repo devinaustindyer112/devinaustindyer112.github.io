@@ -1,51 +1,9 @@
-.display-none {
-	display: none;
-}
-
-#header {
-  position: relative;
-  z-index: 1;
-}
-
 body {
   background-color: black;
 }
 
-.body {
-  max-height: 500px;
-}
-
-.row-image {
-  max-height: 25vh;
-  min-height: 25vh;
-  background-color: black;
-	background-repeat: no-repeat;
-  background-size: cover;
-  transition: min-height .7s ease;
-}
-
-.row-image.expand {
-  min-height: 500px;
-}
-
 p {
 	font-family: 'Rajdhani', sans-serif;
-}
-
-.bg-dark-t {
-	background-color: rgba(0,0,0,0.5) !important;
-}
-
-.bg-orange {
-	background-color: #ff7d12 !important;
-}
-
-.bg-green {
-	background-color:#5ed186 !important;
-}
-
-.bg-gradient-t {
-  background: linear-gradient(black, transparent);
 }
 
 h1 {
@@ -74,3 +32,52 @@ h1:after {
   margin-right: -50%;
 }
 
+.bg-dark-t {
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.bg-orange {
+	background-color: #ff7d12 !important;
+}
+
+.bg-green {
+	background-color:#5ed186 !important;
+}
+
+.bg-gradient-t {
+  background: linear-gradient(black, transparent);
+}
+
+.parallax {
+  /* Set a specific height */
+  height: 300px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-image {
+  max-height: 25vh;
+  min-height: 25vh;
+  background-color: black;
+	background-repeat: no-repeat;
+  background-size: cover;
+  transition: min-height .7s ease;
+}
+
+.row-image.expand {
+  min-height: 500px;
+}
+
+.display-none {
+	display: none;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+}
