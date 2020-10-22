@@ -40,6 +40,10 @@
     <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 3</h1>
 </div>
 
+<div class="row row-image display-none" id="row4" style="background-image: url('./images/image4.jpg');">
+    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 4</h1>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
@@ -65,6 +69,7 @@
         $('#row1').show('slide', {direction: "right"}, 2400);
         $('#row2').show('slide', 2000);
         $('#row3').show('slide', {direction: "right"}, 2200);
+		$('#row4').show('slide', 2000);
 
         $('.navbar-toggler').click(function() {
 			$('#row1header').fadeToggle();
