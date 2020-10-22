@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Devin Dyer</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com.css2>family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+</head>
+
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient-t p-2">
+<a class="navbar-brand" href="#">Devin Dyer<span class="glyphicon glyphicon-home"></span></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  	</button>
+  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    		<div class="navbar-nav p-1">
+      			<a class="nav-item nav-link active" href="index.php">Home</a>
+      			<a class="nav-item nav-link" href="about.php">About</a>
+      			<a class="nav-item nav-link" href="projects.php">Projects</a>
+      			<a class="nav-item nav-link" href="gallery.php">Gallery</a>
+		</div>
+  	</div>
+</nav>
+
+<div class="row row-image display-none" id="row1" style="background-image: url('./images/image1.jpg');">
+    <h1 class="text-light" id="row1header" style="font-family: 'Lobster'; padding-top: 75px;">Header 1</h1>
+</div>
+
+<div class="row row-image display-none" id="row2" style="background-image: url('./images/image2.jpg');">
+    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 2</h1>
+</div>
+
+<div class="row row-image display-none" id="row3" style="background-image: url('./images/image3.jpg');">
+    <h1 class="text-light" style="font-family: 'Lobster'; padding-top: 75px;">Header 3</h1>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/app.js"></script>
+
+<script type="text/javascript">
+    document.querySelector('#row1').addEventListener('click', function() {
+        document.querySelector('#row1').classList.toggle('expand');
+    });
+    document.querySelector('#row2').addEventListener('click', function() {
+        document.querySelector('#row2').classList.toggle('expand');
+    });
+    document.querySelector('#row3').addEventListener('click', function() {
+        document.querySelector('#row3').classList.toggle('expand');
+    });
+
+    $(document).ready(function() {
+        $('#header').css('top', $('.navbar').height() + parseInt($('.navbar').css('padding-top')) * 2);
+        $('#header').show('slide', {},  1500, function() {
+            $('.display-none').fadeIn(1000);
+        });	
+
+        $('#row1').show('slide', {direction: "right"}, 2400);
+        $('#row2').show('slide', 2000);
+        $('#row3').show('slide', {direction: "right"}, 2200);
+
+        $('.navbar-toggler').click(function() {
+			$('#row1header').fadeToggle();
+		});
+    });
+</script>
+
+
+</body>
+</html>
